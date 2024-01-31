@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\ServiceController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+Route::resource('services', ServiceController::class);
+Route::get('/', [ServiceController::class, 'index'])->name('services.index');
+Route::get('/createService', [ServiceController::class, 'create'])->name('services.create');
+Route::post('/createService/store', [ServiceController::class, 'store'])->name('services.store');

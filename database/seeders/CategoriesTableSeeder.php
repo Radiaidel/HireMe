@@ -20,7 +20,6 @@ class CategoriesTableSeeder extends Seeder
             ['name' => 'Plomberie'],
             ['name' => 'Peinture'],
             ['name' => 'Jardinage'],
-            // Ajoutez d'autres catégories selon vos besoins
         ]);
         }
 }
