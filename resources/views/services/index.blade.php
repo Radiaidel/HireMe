@@ -24,6 +24,11 @@
         <p class="text-gray-600">{{ $service->description }}</p>
         <p class="text-gray-700">Catégorie : {{ $service->category->name }}</p>
         <p class="text-gray-700">Coût : {{ $service->cost }}</p>
+        <p class="text-gray-800">Informations du prestataire</p>
+        <p class="text-gray-700">Nom  : {{ $service->provider_name }}</p>
+        <p class="text-gray-700">Email : {{ $service->provider_email }}</p>
+
+
     </div>
     @endforeach
 </div>

@@ -15,12 +15,16 @@ return new class extends Migration
     {
         Schema::create('services', function (Blueprint $table) {
             $table->id();
-        $table->string('title');
-        $table->text('description');
-        $table->unsignedBigInteger('category_id'); // Ajout de la clé étrangère
-        $table->foreign('category_id')->references('id')->on('categories');
-        $table->decimal('cost', 8, 2)->nullable();
-        $table->timestamps();
+            $table->string('title');
+            $table->text('description');
+            $table->unsignedBigInteger('category_id');
+            $table->decimal('cost', 8, 2)->nullable();
+            $table->string('provider_name'); 
+            $table->string('provider_email');
+            $table->timestamps();
+
+            $table->foreign('category_id')->references('id')->on('categories');
+        
         });
     }
 

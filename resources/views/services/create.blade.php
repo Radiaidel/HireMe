@@ -31,6 +31,16 @@
                 <input type="number" name="cost" id="cost" class="border border-gray-300 p-2 w-full" step="0.01">
             </div>
 
+            <div class="mb-4">
+                <label for="provider_name" class="block text-gray-700 font-bold mb-2">Nom du Prestataire:</label>
+                <input type="text" name="provider_name" id="provider_name" class="border border-gray-300 p-2 w-full" required>
+            </div>
+
+            <div class="mb-4">
+                <label for="provider_email" class="block text-gray-700 font-bold mb-2">Email du Prestataire:</label>
+                <input type="email" name="provider_email" id="provider_email" class="border border-gray-300 p-2 w-full" required>
+            </div>
+
             <button type="submit" class="bg-blue-500 text-white p-2 rounded">Ajouter le Service</button>
         </form>
     </div>
