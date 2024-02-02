@@ -20,6 +20,14 @@ class CategoriesTableSeeder extends Seeder
             ['name' => 'Plomberie'],
             ['name' => 'Peinture'],
             ['name' => 'Jardinage'],
+            ['name' => 'Électricité'],
+            ['name' => 'Nettoyage'],
+            ['name' => 'Cuisine'],
+            ['name' => 'Baby-sitting'],
+            ['name' => 'Entretien de la piscine'],
+            ['name' => 'Services de déménagement'],
+            ['name' => 'Cours particuliers'],
+            ['name' => 'Services de photographie'],
         ]);
         }
 }
