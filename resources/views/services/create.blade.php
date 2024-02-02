@@ -40,7 +40,7 @@
                 <input type="email" name="provider_email" id="provider_email" class="border border-gray-300 p-2 w-full focus:outline-none focus:border-blue-500" required>
             </div>
 
-            <button type="submit" class="bg-teal-600 text-white p-2 rounded ">Ajouter le Service</button>
+            <button type="submit" class="bg-indigo-500 text-white p-2 rounded ">Ajouter le Service</button>
         </form>
     </div>
 @endsection
